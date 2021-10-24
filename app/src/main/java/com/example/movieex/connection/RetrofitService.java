@@ -10,7 +10,7 @@ public interface RetrofitService {
     Call<BoxOfficeResultBodyVO> searchDailyBoxOfficeList (@Query("key") String key
             , @Query("targetDt") String targetDt);
     // 위클리
-    @GET("boxoffice/searchWeeklyBoxOfficeList.json")
+    @GET("boxoffice/searchWeeklyBoxOfficeList.json?weekGb=1")
     Call<BoxOfficeResultBodyVO> searchWeeklyBoxOfficeList(@Query("Key") String key
-            , @Query("targetDt") String targetDt, @Query("weekGb") String weekGb);
+            , @Query("targetDt") String targetDt);
 }

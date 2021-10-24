@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:hint="\t\t\t\t\t-yyyy-\t\t\t" />
 
         <EditText
@@ -31,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:hint="\t\t\t\t\t-mm-\t\t\t" />
 
         <EditText
@@ -38,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:hint="\t\t\t\t-dd-\t\t\t" />
     </LinearLayout>
 
