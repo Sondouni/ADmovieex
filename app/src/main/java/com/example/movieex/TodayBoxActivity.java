@@ -37,7 +37,13 @@ public class TodayBoxActivity extends AppCompatActivity {
                 ed_Year.getText().toString()+
                         ed_Month.getText().toString()+
                         ed_Day.getText().toString(); //하나하나 확인하기 귀찮네,,,
-        if(targetDt.length()==8){
+        if(targetDt.length()==8
+                && (Integer.parseInt(ed_Year.getText().toString()))>0
+                && (Integer.parseInt(ed_Year.getText().toString()))<=2021
+                && (Integer.parseInt(ed_Month.getText().toString()))>0
+                && (Integer.parseInt(ed_Month.getText().toString()))<=12
+                && (Integer.parseInt(ed_Day.getText().toString()))>0
+                && (Integer.parseInt(ed_Day.getText().toString()))<=30){
             Network.onNetwork(targetDt,ma);
         }else{
             Snackbar.make(v0, "Are you Sure", Snackbar.LENGTH_SHORT)
