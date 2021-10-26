@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">What we gonna watch</string>
+
+    <string name="actor_label_1">MovieName</string>
+    <string name="actor_label_2">MovieName(eng)</string>
+    <string name="actor_label_3">ReleaseYear</string>
+    <string name="actor_label_4">Directors</string>
+    <string name="actor_label_5">Genre</string>
+    <string name="actor_label_6">National</string>
+
 </resources>

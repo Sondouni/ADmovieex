@@ -46,9 +46,7 @@ public class TodayBoxActivity extends AppCompatActivity {
                 && (Integer.parseInt(ed_Day.getText().toString()))<=30){
             Network.onNetwork(targetDt,ma);
         }else{
-            Snackbar.make(v0, "Are you Sure", Snackbar.LENGTH_SHORT)
-                    // 스낵바 Action 설정("표시할 텍스트", onClick)
-                    .setAction("OK", new View.OnClickListener() { // 왜 안돼죠?
+            Snackbar.make(v0, "Are you Sure", Snackbar.LENGTH_SHORT).setAction("OK", new View.OnClickListener()  { //스낵바 Action 설정("표시할 텍스트", onClick)
                                 @Override
                                 public void onClick(View v) {
                                     Toast.makeText(v0.getContext(), "Plz type right text", Toast.LENGTH_SHORT).show();
